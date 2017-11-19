@@ -1,7 +1,23 @@
-#bg {
+/*#bg {
    background-image:url("http://static.flickr.com/2378/2259191409_3b97ccbe77.jpg");
     background-position:center;
     width:700px;
     height:400px;
 
-   }
+   }*/
+
+body {
+	font-weight: bold;
+	background-image: url("http://78.media.tumblr.com/cc7b70d7ae31900c4a81db775f67794a/tumblr_nxrnsuUVu81sy13z1o1_500.jpg");
+}
+
+
+h1 {
+	color: blue;
+	font-size: 250%;
+}
+
+#images {
+	border:5px solid black;
+}
+}

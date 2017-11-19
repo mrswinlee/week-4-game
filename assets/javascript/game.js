@@ -31,7 +31,7 @@
 $(document).ready(function() {
 
 var wins = 0;
-var losses =0;
+var losses = 0;
 var totalScoreIs = 0;
 var computerRandomNumber = (Math.floor(Math.random()*120) + 18);
 var crystalOrange = (Math.floor(Math.random() * 12));
@@ -64,13 +64,12 @@ var updateDom = function (){
 	$("#losses").text(losses)
 	$("#totalScore").text(totalScoreIs)
 	$("#randomNumber").text(computerRandomNumber)
-	
 	}
 
 
 	//clicking on crystal yield a value
 	$("#orange-crystal").on("click",function(){
-		totalScoreIs += crystalOrange;
+		totalScoreIs += crystalOrange;   //x += y
 		checkGameIsOver ();
 		updateDom ();
 	});
@@ -89,10 +88,4 @@ var updateDom = function (){
 		checkGameIsOver ();
 		updateDom ();
 	});
-    
-    // after checkGameIsOVer, update DOM
-
-    //check total score = computerRandomNumber
-
-});
- 
+ });
